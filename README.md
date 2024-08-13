@@ -3,7 +3,9 @@
 
 ## Overview
 
-This Flask application provides two endpoints to fetch, process, and display data from an external service. The data is processed by converting text to uppercase and modifying numerical values before being stored in a dictionary. The processed data can then be retrieved through a separate endpoint.
+This Flask application provides two endpoints to fetch, process, and display data from an external service. 
+The data is processed by converting text to uppercase and modifying numerical values before being stored in a dictionary. 
+The processed data can then be retrieved through a separate endpoint.
 
 ## Endpoints
 
@@ -22,42 +24,22 @@ This Flask application provides two endpoints to fetch, process, and display dat
 - **Response:**
   - **200 OK:** Returns the processed data in JSON format.
 
-## Setup
 
-### Prerequisites
+ **Create a virtual environment (optional but recommended):**
 
-- Python 3.x
-- Flask
-
-### Installation
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
-
-2. **Create a virtual environment (optional but recommended):**
-
-   ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
+   venv\Scripts\activate
 
-3. **Install dependencies:**
+**Install dependencies:**
 
-   ```bash
    pip install Flask requests
-   ```
+ 
 
 ### Running the Application
 
 1. **Run the Flask application:**
 
-   ```bash
    python app.py
-   ```
 
 2. **Access the application:**
 
@@ -76,10 +58,7 @@ This Flask application provides two endpoints to fetch, process, and display dat
 
    - Navigate to `http://127.0.0.1:5000/get-processed-data` to retrieve the processed data. You should see the data with the `title` field in uppercase and the `id` field modified.
 
-## Customization
 
-- **External Service:** Modify the URL in the `fetch_data` function to point to your desired external API (e.g., Shopify).
-- **Data Processing:** Adjust the processing logic in the `fetch_data` function to meet your specific requirements.
 
 ## Dependencies
 
